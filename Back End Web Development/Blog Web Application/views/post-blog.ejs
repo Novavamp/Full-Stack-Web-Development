@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs') %>
+
+    <div class="form-div">
+        <form action="/submit" method="post">
+            <label for="title">
+                <span>Post Title</span>
+                <input type="text" name="title" id="title" placeholder="Post Title" required>
+            </label>
+            <label for="author">
+                <span>Post Author</span>
+                <input type="text" name="author" id="author" placeholder="Author Name" required>
+            </label>
+            <label for="postDetails">
+                <span>Post</span>
+                <textarea name="post-detail" id="post-detail" cols="30" rows="10" placeholder="Write your post here..."
+                    required></textarea>
+            </label>
+            <input type="submit" value="Submit Your Post">
+        </form>
+    </div>
+
+    <%- include('partials/footer.ejs') %>

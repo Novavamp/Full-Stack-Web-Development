@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    .blue-box {
+      position: relative;
+      top: 200px;
+      left: 200px;
+      background-color: blue;
+      width: 500px;
+      height: 300px;
+
+    }
+    .red-circle {
+      position: absolute;
+      top: 150px;
+      left: 250px;
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .block  {
+      display: inline-block;
+    }
+    p {
+      position: absolute;
+      top: 50px;
+      left: 40px;
+      right: 30px;
+      text-align: center;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="blue-box block">
+    <div class="red-circle block">
+      <p class="block">Hello World, My name is 
+        Precious Okechukwu Nwosu,
+      I am a web developer</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

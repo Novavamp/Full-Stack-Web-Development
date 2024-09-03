@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 329px 207px 160px 50px;
+      grid-template-rows: 423px 149px 164px;
+      grid-auto-rows: 29px;
+      background-color: #F0F1EC;
+      width: 748px;
+      height: 748px;
+    }
+
+    .item {
+      border-right: 9px solid black;
+      border-top: 9px solid black;
+     }
+
+    .one {
+      background-color: #E72F24;
+      border-top: none;
+    }
+
+    .two, .three, .four, .six {
+      background-color: #F0F1EC;
+    }
+
+    .two {
+      grid-column: span 3;
+      border-right: none;
+      border-top: none;
+    }
+
+    .three, .four {
+      grid-row: span 2;
+    }
+
+    .four {
+      grid-column: span 2;
+    }
+
+    .five {
+      background-color: #004592;
+      border-bottom: 10px solid black;
+      border-right: none;
+    }
+
+    .six {
+      grid-column: 1;
+    }
+
+    .seven {
+      background-color: #F9D01E;
+    }
+
+    .eight {
+      background-color: #232629;
+    }
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <div class="flex">
+    <div class="container">
+      <div class="item one"></div>
+      <div class="item two"></div>
+      <div class="item three"></div>
+      <div class="item four"></div>
+      <div class="item five"></div>
+      <div class="item six"></div>
+      <div class="item seven"></div>
+      <div class="item eight"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>

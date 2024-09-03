@@ -1,0 +1,30 @@
+<%- include('partials/header.ejs') %>
+    <section class="section">
+        <main class="container">
+            <h1 class="display-6 text-center">Edit Post</h1>
+
+            <div class="form-div">
+                <form action="/update-post/<%= index %>" method="POST">
+                    <label for="title">
+                        <span>Post Title</span>
+                        <input type="text" id="title" name="title" placeholder="Post Title" value="<%= post.title %>"
+                            required>
+                    </label>
+                    <label for="author">
+                        <span>Post Author</span>
+                        <input type="text" id="author" name="author" placeholder="Author Name"
+                            value="<%= post.author %>" required>
+                    </label>
+                    <label for="post-detail">
+                        <span>Post Details</span>
+                        <textarea id="post-detail" name="post-detail" cols="30" rows="10"
+                            placeholder="Write your post here..." required><%= post.detail %></textarea>
+                    </label>
+                    <input type="submit" value="Update Post" class="btn btn-primary">
+                </form>
+            </div>
+        </main>
+    </section>
+
+
+    <%- include('partials/footer.ejs') %>
